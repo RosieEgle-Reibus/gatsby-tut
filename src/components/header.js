@@ -12,9 +12,10 @@ const Header = ({ siteTitle, siteDescription }) => (
           height="374"
           alt=""
         />
+        </Link>
         <div>{siteTitle}</div>
         <div>{siteDescription}</div>
-      </Link>
+      
     </div>
   </header>
 )
@@ -25,7 +26,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ` `,
   siteDescription: ``,
 }
 

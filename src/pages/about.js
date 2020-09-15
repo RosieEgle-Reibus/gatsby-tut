@@ -7,17 +7,17 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="The home page"
-        description="You can customize the SEO text here."
+        title="About this site"
+        description="Info about the sitew"
         image="/logo.png"
         pathname="/"
         // Boolean indicating whether this is an article:
         // article
       />
       <section>
-        <h1>Hello People.</h1>
-        <div><p>This file, index.js, functions as the homepage for the site.</p>
-        <p>It can be populated with pure HTML like this, and extended using all available Gatsby and React components.</p></div>
+        <h1>About this site</h1>
+        <div><p>My very first gatsby page yayayayayayayyay!!!!!</p>
+        <p>It's based on the index.js page</p></div>
       </section>
     </Layout>
   )
