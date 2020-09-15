@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import Nav from "./nav"
 
 import style from "./header.module.css"
 
 const Header = ({ siteTitle, siteDescription }) => (
   <header id="site-header" className={style.masthead} role="banner">
+    <Nav></Nav>
     <div className={style.masthead_info}>
       <Link to="/">
         <img
