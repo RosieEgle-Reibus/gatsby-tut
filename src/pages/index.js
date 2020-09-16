@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -14,6 +14,13 @@ const NeuWrapper = styled.div`
 `
 
 const IndexPage = () => {
+
+const [title, setTitle] = useState("I'm a TITLE")
+
+let changeTitle = () => {
+  title === "I'm a TITLE" ? setTitle("NEWER BETTER TITLE") : setTitle("I Suck")
+}
+
   return (
     <Layout>
       <SEO
@@ -25,7 +32,7 @@ const IndexPage = () => {
         // article
       />
       <section className={style.wrapper}>
-        <h1 className={style.heading}>This is the new title for the page.</h1>
+        <a onClick={changeTitle}><h1 className={style.heading}>{title}</h1></a>
         <NeuWrapper>
           <p>This file, index.js, functions as the homepage for the site.</p>
           <p>
