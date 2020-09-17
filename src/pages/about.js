@@ -19,7 +19,7 @@ const AboutPage = ({ data }) => {
         // article
       />
       <section className={style.wrapper}>
-        <Img fluid={data.headerImage.childImageSharp.fluid} alt="Robots" />
+        {/* <Img fluid={data.headerImage.childImageSharp.fluid} alt="Robots" /> */}
         <h1 className={style.heading}>About this site</h1>
         <RobotImage
           src={"/images/bubbles-callout.png"}
@@ -44,16 +44,16 @@ const AboutPage = ({ data }) => {
 
 export default AboutPage
 
-export const query = graphql`
-  {
-    headerImage: file(
-      relativePath: { eq: "robots-androids-and-cyborgs-oh-my-1184x360.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1184) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   {
+//     headerImage: file(
+//       relativePath: { eq: "robots-androids-and-cyborgs-oh-my-1184x360.jpg" }
+//     ) {
+//       childImageSharp {
+//         fluid(maxWidth: 1184) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `

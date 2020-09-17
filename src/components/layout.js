@@ -25,6 +25,10 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           description
+          navigation {
+            name
+            link
+          }
         }
       }
     }
@@ -38,6 +42,7 @@ const Layout = ({ children }) => {
       <Header
         siteTitle={data.site.siteMetadata.title}
         siteDescription={data.site.siteMetadata.description}
+        siteNavigation={data.site.siteMetadata.navigation}
       />
       <main id="primary" className={style.site_main}>
         {children}
