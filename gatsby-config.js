@@ -22,5 +22,14 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-css-customs`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/content/images/`,
+      },
+    },
   ],
 }
